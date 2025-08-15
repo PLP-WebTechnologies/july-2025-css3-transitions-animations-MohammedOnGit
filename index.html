@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Experience</title>
+    <link rel="stylesheet" href="style .css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Experience</h1>
+    </header>
+
+    <!-- Part 1: CSS Animations -->
+    <section class="animation-section">
+        <h2>CSS Animations</h2>
+        
+        <div class="animation-box hover-scale">Hover to Scale</div>
+        <div class="animation-box spin-continuous">Continuous Spin</div>
+        <button class="btn pulse-on-click">Click to Pulse</button>
+        
+        <div class="card">
+            <div class="card-face front">Front</div>
+            <div class="card-face back">Back</div>
+        </div>
+    </section>
+
+    <!-- Part 2: JavaScript Functions -->
+    <section class="function-section">
+        <h2>JavaScript Functions</h2>
+        
+        <div class="calculator">
+            <input type="number" id="num1" placeholder="First number">
+            <input type="number" id="num2" placeholder="Second number">
+            <button onclick="calculate('add')">Add</button>
+            <button onclick="calculate('multiply')">Multiply</button>
+            <p id="result"></p>
+        </div>
+        
+        <div class="scope-demo">
+            <button onclick="testScope()">Test Variable Scope</button>
+            <p id="scope-output"></p>
+        </div>
+    </section>
+
+    <!-- Part 3: Combined Animations -->
+    <section class="combined-section">
+        <h2>Combined CSS & JavaScript</h2>
+        
+        <div class="animation-controls">
+            <button onclick="startAnimation('box1', 'slide')">Slide Box</button>
+            <button onclick="startAnimation('box1', 'rotate')">Rotate Box</button>
+            <button onclick="resetAnimation('box1')">Reset</button>
+        </div>
+        <div id="box1" class="animatable-box"></div>
+        
+        <div class="modal-container">
+            <button onclick="toggleModal()">Show Modal</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span onclick="toggleModal()" class="close">&times;</span>
+                    <h3>Animated Modal</h3>
+                    <p>This modal appears with a CSS animation triggered by JavaScript!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
